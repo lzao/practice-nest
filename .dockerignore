@@ -1,1 +1,16 @@
+## git
+.git
+.gitignore
+README.md
+
+## Mac
+.DS_Store
+
+## docker
+docker
+.dockerignore
+Dockerfile.app.prod
+docker-compose.yml
+
+## node
 node_modules
