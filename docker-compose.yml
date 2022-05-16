@@ -1,8 +1,12 @@
 version: '3'
 services:
   nest:
-    image: lzao/daily-corona-status-api:1.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile.app.dev
     container_name: nest
+    volumes:
+      - .:/app
     ports:
       - 3000:3000
     tty: true
