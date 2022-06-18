@@ -6,4 +6,16 @@ export class RegionController {
   all(): string {
     return 'ok';
   }
+  @Get('daily')
+  daily(): string {
+    return 'ok';
+  }
+  @Get('real')
+  real(): string {
+    return 'ok';
+  }
+  @Get('province')
+  province(): string {
+    return 'ok';
+  }
 }
