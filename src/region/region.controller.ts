@@ -1,21 +1,34 @@
 import { Controller, Get } from '@nestjs/common';
+import { RegionService } from './region.service';
 
 @Controller('region')
 export class RegionController {
+  constructor (
+    private readonly regionService: RegionService
+  ) {}
+
   @Get()
-  all(): string {
-    return 'ok';
+  all(): any {
+    return this.regionService.getAll();
   }
   @Get('daily')
-  daily(): string {
-    return 'ok';
+  daily(): any {
+    return this.regionService.getDaily();
   }
   @Get('real')
-  real(): string {
-    return 'ok';
+  real(): any {
+    return this.regionService.getReal();
   }
   @Get('province')
-  province(): string {
-    return 'ok';
+  province(): any{
+    return this.regionService.getProvince();
+  }
+  @Get('stat')
+  stat(): object {
+    return this.regionService.getStat();
+  }
+  @Get('live')
+  live(): object {
+    return this.regionService.getLive();
   }
 }
