@@ -301,7 +301,7 @@ export class RegionService {
         province: '강원 강릉',
         confirmedCaseCount: 5,
       },
-    ]
+    ];
   }
 
   getProvince(): any {
@@ -638,7 +638,7 @@ export class RegionService {
       deceased: [23745, 35],
       confirmedCritical: [345, 7],
       hospitalised: [157, -116],
-    }
+    };
   }
 
   getLive(): object {
@@ -648,6 +648,6 @@ export class RegionService {
       weekAgo: 41937,
       twoWeeksAgo: 43524,
       monthAgo: 103780,
-    }
+    };
   }
 }

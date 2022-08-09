@@ -3,9 +3,7 @@ import { RegionService } from './region.service';
 
 @Controller('region')
 export class RegionController {
-  constructor (
-    private readonly regionService: RegionService
-  ) {}
+  constructor(private readonly regionService: RegionService) {}
 
   @Get()
   all(): any {
@@ -20,7 +18,7 @@ export class RegionController {
     return this.regionService.getReal();
   }
   @Get('province')
-  province(): any{
+  province(): any {
     return this.regionService.getProvince();
   }
   @Get('stat')
